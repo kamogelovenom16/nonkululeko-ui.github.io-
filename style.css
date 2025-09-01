@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f4f6f8;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+header {
+  background: #20232a;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 { margin: 0; }
+
+nav { margin-top: 10px; }
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+nav a.active, nav a:hover { text-decoration: underline; }
+
+.header-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box input { padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc; }
+.search-box button { padding: 8px 12px; border:none; border-radius:5px; cursor:pointer; background:#61dafb; color:black; }
+#darkModeToggle { 
+  padding: 8px 12px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  border: none; 
+  background: #0077cc; 
+  color: white; 
+}
+#darkModeToggle:hover { background: #005fa3; }
+
+.ads {
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+  border: 1px dashed #999;
+  border-radius: 8px;
+}
+
+main { padding: 20px; }
+
+article {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body.dark-mode article { background: #1e1e1e; box-shadow: 0 2px 4px rgba(255,255,255,0.05); }
+
+article h3 a { color: #0077cc; }
+body.dark-mode article h3 a { color: #61dafb; }
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover { background: #005fa3; }
+
+.single-post { background: white; padding: 20px; border-radius: 8px; }
+body.dark-mode .single-post { background: #1e1e1e; }
+
+.related {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+body.dark-mode .related { background: #2a2a2a; }
+
+.related h3 { margin-top: 0; }
+
+.contact-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+body.dark-mode .contact-form { background: #1e1e1e; }
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  color: black;
+}
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea { background: #2a2a2a; color: white; border: 1px solid #555; }
+
+.contact-form button {
+  padding: 10px 15px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover { background: #005fa3; }
+
+footer {
+  background: #20232a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Highlighted search results */
+mark {
+  background: yellow;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+body.dark-mode mark { background: orange; color: black; }
